@@ -29,15 +29,6 @@ public class BreadthFirstSearch extends PathfindingAlgorithm {
         if(currentNode.equals(target)){
             reachedTarget = true;
         }
-        if(graph == null){
-            System.out.println("graph jest nullem");
-        }
-        if(currentNode == null){
-            System.out.println("current jest nullem");
-        }
-        if(graph.get(currentNode) == null){
-            System.out.println("zaweira nulla");
-        }
         for (Vector2d node : graph.get(currentNode)) {
             if (!visited.contains(node)){
                 visited.add(node);

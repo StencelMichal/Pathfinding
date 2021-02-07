@@ -35,7 +35,7 @@ public class Visualization implements EventHandler<ActionEvent> {
     private final GridManager gridManager;
 
 
-    public Visualization(Stage stage, MutableInt timeGap) throws IOException {
+    public Visualization(Stage stage, MutableInt timeGap) {
 
         Pane root = new Pane();
         root.setPrefSize(width, height);
